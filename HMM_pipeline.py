@@ -27,7 +27,7 @@ file_list = ["M4YX12_STREQ", "A0A081BKX9_9LACO", "A0A1G9IV55_9CLOT","C2D302_LACB
 
 # In[31]:
 
-
+# calculate the E-value and transfer original file with only target name and processed E-values
 def file_trans(filename):
     path = "/Users/wherever/you/want/" + filename + ".txt"
     table = pd.read_table(path, header = 0, index_col = 0)
@@ -50,7 +50,7 @@ for file in file_list:
 
 # In[33]:
 
-
+# filter out target proteins for each file
 def build_matrix(filename):
     path = '/Users/wherever/you/want/' + filename + '_file.txt'
     table = pd.read_table(path, header = 0, index_col = 0)
@@ -61,7 +61,7 @@ def build_matrix(filename):
 
 # In[34]:
 
-
+#building the matrix
 e_dict = {}
 for file in file_list:
     e_dict[file] = build_matrix(file)
