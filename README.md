@@ -23,7 +23,7 @@ number that are used to amplify the differences between the original E-values.
 
 However, some of the sequences pairs, they have E-values 
 that equal to 0, so it can't undergo the math. An incredibly large number (in this case, 1000,000) is assigned to these sequence pairs
-to make sure the matrix can be process by clustering softwares.
+to make sure the matrix can be processed by clustering software.
 
 
 ## Building the Matrix
