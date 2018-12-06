@@ -21,7 +21,7 @@ the E-value the higher the similarity between the sequences. The E-values range 
 numbers. Therefore, the original E-values are processed in a way to be taken the -log10 of the original number and give a positive
 number that are used to amplify the differences between the original E-values. 
 
-However, some of the sequences pairs, they have E-values 
+However, for some of the sequences pairs, they have E-values 
 that equal to 0, so it can't undergo the math. An incredibly large number (in this case, 1000,000) is assigned to these sequence pairs
 to make sure the matrix can be processed by clustering software.
 
