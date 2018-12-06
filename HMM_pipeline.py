@@ -68,6 +68,6 @@ for file in file_list:
 #print(e_dict)
 cas9_matrix =pd.DataFrame(data = e_dict, index = file_list)
 
-cas9_matrix.to_csv('/Users/xiaoyingwei/BI_project/cas9_matrix.txt', sep = "\t", index = True)
+cas9_matrix.to_csv('/Users/wherever/you/want/cas9_matrix.txt', sep = "\t", index = True)
 cas9_matrix
 
