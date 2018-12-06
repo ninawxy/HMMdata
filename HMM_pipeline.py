@@ -29,7 +29,7 @@ file_list = ["M4YX12_STREQ", "A0A081BKX9_9LACO", "A0A1G9IV55_9CLOT","C2D302_LACB
 
 
 def file_trans(filename):
-    path = "/Users/xiaoyingwei/BI_project/" + filename + ".txt"
+    path = "/Users/wherever/you/want/" + filename + ".txt"
     table = pd.read_table(path, header = 0, index_col = 0)
     table = table[["E-value"]]
     evalueLog = table["E-value"].values
@@ -37,7 +37,7 @@ def file_trans(filename):
     evalueLog = [abs(i) for i in evalueLog]
     table["E-value"] = evalueLog
     table[table == (table.iloc[0,0])] = 1000000
-    new_path = "/Users/xiaoyingwei/BI_project/" + filename + "_file.txt"
+    new_path = "/Users/wherever/you/want/" + filename + "_file.txt"
     table.to_csv(new_path, sep = "\t", index = True)
 
 
@@ -52,7 +52,7 @@ for file in file_list:
 
 
 def build_matrix(filename):
-    path = '/Users/xiaoyingwei/BI_project/' + filename + '_file.txt'
+    path = '/Users/wherever/you/want/' + filename + '_file.txt'
     table = pd.read_table(path, header = 0, index_col = 0)
     table = table.loc[file_list, ["E-value"]]
     table = table[~table.index.duplicated(keep = "last")]
