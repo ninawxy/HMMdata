@@ -39,3 +39,5 @@ to do clustering analysis on software like Morpheus.
 
 ## 
 *Sample input files downloaded from the phmmer website, sample output files after E-value calculation, and sample matrix file can be found in this project.*
+
+*All sequence files being analyzed can be found in the branch called Dataset*
